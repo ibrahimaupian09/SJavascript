@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p id="para1" style="color: blue;">It's a tree data structure in which all HTML elements are organized in tree data structure and we can modify it through Javascript.</p>
+    <h2>DOM can be modified through <b>2</b> ways</h2>
+    <ol>
+        <li>Direct change thorugh HTML</li>
+        <li>Change tbrough Javascript</li>
+    </ol>
+    <h2>DOM Methods</h2>
+    <ol>
+        <li>getElementById</li>
+        <li>getElementByClassName</li>
+        <li>getElementByTagName</li>
+        <li>querySelector</li>
+        <li>querySelectorAll</li>
+    </ol>
+    <p><b>innerHTML:</b> is a property used to <b>get or set</b> the HTML content of an element. It allows you to update the content inside an HTML tag dynamically.</p>
+    <p><b>.innerText:</b>is a property used to <b>get or set</b> the text content of an HTML element. It only returns the text content without any HTML tags.</p>
+    <!-- 1st -->
+    <!-- <button id="btn" onclick="listen()">Click</button>
+    <form>
+        <input type="text" onkeypress="inputlistener()">
+    </form>
+    <p id="para2" onmouseenter="remove()">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias impedit soluta excepturi expedita suscipit amet officiis repellendus temporibus ratione est, et nulla provident vitae ex, veritatis odit nemo! Nulla, a?</p> -->
+
+     <!-- 2nd -->
+    <!-- <h1 id="head1">This is Me Khan</h1>
+    <p class="paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quod quos error excepturi vero repellat perspiciatis eius! Cum eaque hic quas aperiam ipsa commodi itaque.</p>
+    <p class="paragraph2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga eius quisquam, mollitia, obcaecati, aspernatur dolore illo accusamus deleniti aliquam fugit voluptatem odit corporis sed quidem!</p>
+    <h3>I am h3</h3> -->
+
+    <!-- 3rd modification of DOM through Javascript -->
+
+    <button onclick="changeDom()">Click Me</button>
+    <h4 id="head2">I am  H4</h4>
+    <!-- Modifying Attribute -->
+    <img src="./images/pexels-photo-3752194.jpeg" id="image" width="100px" height="99px">
+
+    <script>
+        // // onload: when the DOM is load it will show first this function
+        // const test = () =>  {
+        //     alert("Raza raza yaroo")
+        // }
+
+        // // onclick: when you click on Click button it will show this function
+        // const listen = () => {
+        //     alert ("button clicked");
+        // }
+
+        // // onkeypress: used for searching item it changing value by pressing every singlr character
+        // // it will change with pressing every single key
+        // const inputlistener = () => {
+        //     console.log('changed');
+        // }
+
+        // // onkeyenter: 
+        // const remove = () => {
+        //     console.log('catch me');
+        // }
+
+        // // 2nd
+        // const h1 = document.getElementById("head1"); // by ID
+        // const p = document.getElementsByClassName("paragraph1"); // by class
+        // const h3 = document.getElementsByTagName("h3"); // by tag name
+        // const p = document.querySelector(".paragraph2"); // by queryselector 
+        
+        // 3rd Modification of Dom  through Javascript
+
+        const changeDom = () => {
+        //    const b = document.getElementById("head2").innerHTML = "Ibrahimm";
+        // //    Modifying text to uppercase
+        //     const upper =  b.toUpperCase();
+        //     document.getElementById("head2").innerHTML = upper;
+        
+        // Modifying Attribute of tags
+        document.getElementById("image").width = "300";
+        document.getElementById("image").height = "300";
+    }
+
+    </script>
+</body>
+</html>
