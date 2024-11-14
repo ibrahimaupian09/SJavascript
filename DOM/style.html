@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Style Changing</title>
+</head>
+<body>
+    <button onclick="changeDom()">Click</button>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, error, nesciunt harum ut quo tempore optio quae, sapiente molestias a aspernatur sequi hic labore exercitationem commodi quod voluptate doloremque inventore. Officia nostrum, rerum maxime suscipit vitae sit excepturi facilis ducimus facere earum ullam magni repudiandae perferendis aperiam quaerat deleniti, fugit hic velit! Reprehenderit dolor quae aperiam, voluptas, voluptatibus maiores exercitationem omnis illo delectus incidunt rem repudiandae corrupti sed suscipit soluta aliquid nulla, fuga perspiciatis numquam debitis modi temporibus. Voluptates fugit quo et suscipit accusamus! A excepturi expedita, cupiditate officiis tenetur odio voluptatibus nemo. Sunt nihil totam architecto? Esse, optio dolorem!</p>
+    <p class="para2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil vero pariatur minima neque laboriosam molestiae quis amet eligendi nisi itaque?</p>
+    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus, perspiciatis reiciendis sunt doloribus in culpa consectetur magni, praesentium asperiores dicta. Ad commodi laboriosam, doloremque hic harum repellat quam dolor!</p>
+    <script>
+        const changeDom = () => {
+            document.querySelector("#para1").style.color = "Green";
+            document.querySelector(".para2").style.backgroundColor = "Yellow";
+            document.querySelector(".para2").style.color = "Red";
+        }
+    </script>
+</body>
+</html>

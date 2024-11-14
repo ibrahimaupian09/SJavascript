@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM This</title>
+</head>
+<body>
+    <h1>This</h1>
+    <p>refers to the current element that the code is being executed on, especially when used inside event handlers.
+        Give complete information about the Attribute
+    </p>
+    <p id="para1" onclick="parafun(this)" style="color: brown;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde animi ullam libero commodi doloribus ducimus ut in! Aliquam blanditiis provident officiis rerum eligendi porro perspiciatis fugit vitae quaerat? Error, odit!</p>
+
+    <button id="btn" onclick="parafun(this)">Click</button>
+    
+    <script>
+        // const parafun = (para) => {
+        //     console.log(para);
+        // }
+
+        // To check from where the information is recieved
+        // const parafun = (para) => {
+        //     if(para.id === "para1"){
+        //         console.log('para1');
+        //     }
+        //     else{
+        //         console.log("btn");
+        //     }
+        // }
+    </script>
+</body>
+</html>

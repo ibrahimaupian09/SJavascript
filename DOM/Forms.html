@@ -6,11 +6,20 @@
     <title>DOM Forms</title>
 </head>
 <body>
-    <form>
-        <label>Username:</label>
-        <input type="text" id="text">
-        <label>Password:</label>
+    <button onclick="changeDom()">Click</button>
+    <form id="f1">
+        <label>username</label>
+        <input type="text" id="username">
+        <label>password:</label>
         <input type="password" id="password">
     </form>
+
+    <script>
+        const changeDom = () => {
+            const username = document.forms["f1"]["username"].value;
+            const password = document.forms["f1"] ["password"].value;
+            console.log(username,password);
+        }
+    </script>
 </body>
 </html>

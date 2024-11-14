@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <h1>setTimeout ()</h1>
+    <script>
+        const one = () => {
+            setTimeout(() => {
+                console.log('Ibrahim');
+            },10)
+        }
+        const two = () => {
+            setTimeout(() => {
+                console.log('Khan');
+            },9999)
+        }
+        const three = () => {
+            setTimeout(() => {
+                console.log('Afridi');
+            },5000)
+        }
+        const four = () => {
+            console.log('Tedy');
+        }
+        const five = () => {
+            console.log('Bazar');
+        }
+        const six = () => {
+            console.log('Jamrud');
+        }
+        one();
+        two();
+        three();
+        four();
+        five();
+        six();
+    </script>
+</body>
+</html>
