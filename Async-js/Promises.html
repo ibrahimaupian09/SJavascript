@@ -22,6 +22,7 @@
             setTimeout(() => {
                 console.log('two');
                 resolve();
+                // incase we return reject, then it will not go to third it will  stop. 
             },10000)
         })
     }
